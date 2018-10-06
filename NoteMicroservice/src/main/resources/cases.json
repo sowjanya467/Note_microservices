@@ -1,0 +1,132 @@
+{
+	"createnote": {
+		"request": {
+			"url": "/note/createnote",
+			"headers": {
+			"userId":["20180914163256"]
+				
+		},
+			"body": {
+				
+            "archive": false,
+            "content": "string https://www.google.com https://www.facebook.com",
+            "image": [
+             ""
+              ],
+            "pin": true,
+            "title": "testing"
+
+			},
+			"method": "POST"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"status": 200,
+				"message": "created note Successfully !!"
+			}
+		}
+	},
+    "createnotevalid": {
+		"request": {
+			"url": "/note/createnote",
+			"headers": {
+						"userId":["20180914163256"]
+			},
+			"body": {
+				
+            "archive": false,
+            "content": "string https://www.google.com https://www.facebook.com",
+            "image": [
+             ""
+              ],
+            "pin": true,
+            "title": "testing"
+
+			},
+			"method": "POST"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"status": 200,
+				"message": "created note Successfully !!"
+			}
+		}
+	},
+	"createlabel": {
+		"request": {
+			"url": "/note/createlabel/junit",
+			"headers": {
+			"userId":["20180914163256"]
+				
+		},
+			"body": {
+				
+			},
+			"method": "POST"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"status": 200,
+				"message": "label created"
+			}
+		}
+	},
+	"createlabelsad": {
+		"request": {
+			"url": "/note/createlabel/sowjii",
+			"headers": {
+			"userId":["20180914163256"]
+				
+		},
+			"body": {
+				
+			},
+			"method": "POST"
+		},
+		"response": {
+			"status": "BAD_REQUEST",
+			"headers": {
+				
+			},
+			"body": {
+				"status": 400,
+				"message": "Label already present"
+			}
+		}
+	},
+	"remainder": {
+		"request": {
+			"url": "/note/reminder?id=20180915115535&reminderTime=17/09/2018 10:44:05",
+			"headers": {
+			"userId":["20180914163256"]
+				
+		},
+			"body": {
+				
+			},
+			"method": "POST"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"status": 200,
+				"message": "remainder set"
+			}
+		}
+	}
+}
