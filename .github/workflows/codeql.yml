@@ -20,7 +20,7 @@ on:
 jobs:
   run_scan:
     name: 'CodeQl'
-    uses: FedEx/eai-3538069-GHAS/.github/workflows/codeQL.yml@main
+    uses: S/.github/workflows/codeQL.yml@main
     with:
       languages: "['java']"
       jdk-version: '8'
