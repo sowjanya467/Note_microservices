@@ -20,7 +20,7 @@ on:
 jobs:
   run_scan:
     name: 'CodeQl'
-    uses: S/.github/workflows/codeQL.yml@main
+    uses: NOTE_microservices/.github/workflows/codeQL.yml@main
     with:
       languages: "['java']"
       jdk-version: '8'
