@@ -13,9 +13,9 @@ name: CodeQl
 on:
   workflow_dispatch:
   push:
-    branches: [main, codeql]
+    branches: [main, master]
   pull_request:
-    branches: [main, codeql, develop]
+    branches: [main, master]
 
 jobs:
   run_scan:
